@@ -11,9 +11,16 @@ public class Alumno {
      * Crea un alumno nuevo
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        nombre = nombreCompleto;
-        numeroMatricula = numeroMatriculaAlumno;
+        nombre = nombre.substring(0, 3);
+        numeroMatricula = numeroMatricula.substring(0, 4);
         edad = edadAlumno;
+        if (nombre.length()<3) {
+            System.out.println("error la palabra debe tener mas de 3 caracteres");
+        }
+
+        if (numeroMatricula.length()<4){
+            System.out.println("error la matricula debe tener mas de 4 numeros");
+        }
     }
 
     /**
@@ -21,6 +28,10 @@ public class Alumno {
      */
     public String getNombre() {
         return nombre;
+    }
+    
+    public String getNumeroMatriculaAlumno() {
+        return numeroMatricula;
     }
     
     /**
@@ -45,3 +56,4 @@ public class Alumno {
         return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
     }
 }
+
