@@ -11,8 +11,8 @@ public class Alumno {
      * Crea un alumno nuevo
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        nombre = nombre.substring(0, 3);
-        numeroMatricula = numeroMatricula.substring(0, 4);
+        nombre = nombreCompleto;
+        numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
         if (nombre.length()<3) {
             System.out.println("error la palabra debe tener mas de 3 caracteres");
