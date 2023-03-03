@@ -34,6 +34,10 @@ public class Alumno {
         return numeroMatricula;
     }
     
+    public int getEdad(){
+        return edad;
+    }
+    
     /**
      * Cambia el nombre del alumno
      */
@@ -73,4 +77,3 @@ public class Alumno {
         return resultado;
     }
 }
-
