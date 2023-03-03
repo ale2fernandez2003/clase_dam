@@ -74,7 +74,7 @@ public class ClaseDam {
     }
     
     public void imprimirListaNumeradaDeAlumnos() {
-        int num = 0;
+        int num = 1;
         for(Alumno alumno : alumnos) {
             System.out.println( num + "." + alumno.getNombre() + " ("+ alumno.getNumeroMatriculaAlumno() + ") - " + alumno.getEdad() +" años");
             num += 1;
